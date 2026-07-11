@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Box Tasks</title>
+		<style>
+			#mainarea {
+					width:100%;
+					height:1200px;
+					background:blue;
+					position:relative;
+			}
+			.box {
+				width:295px;
+				height:560px;
+				background:yellow;
+				border:none;
+				float:left;
+			}
+			.box img {
+					transition:all 2s;
+					
+			}
+			.box:hover img {
+					transform:scale(1.2,1.2);
+			}
+			.boxtext {
+					height:280px;
+					width:100%;
+					background:#004799;
+					position:relative;
+					
+
+			}
+			.boxtext:hover h5 {
+						color:black;
+			}
+			.boximg {
+					
+					height:280px;
+					width:100%;
+					background:white;
+					overflow:hidden;
+
+			}
+			.boximg img {
+					width:100%;
+					height:100%;
+					
+			}
+			.boxtext h5 {
+					color:white;
+					position:absolute;
+					top:40%;
+					left:20px;
+					z-index:500;
+					font-size:18px;
+					
+			}
+			.boxtext button {
+					
+					padding:10px 20px;
+					color:white;
+					position:absolute;
+					bottom:10px;
+					left:20px;
+					letter-spacing:7px;
+					background:transparent;
+					border:solid 1px white;
+			}
+			.boxtext:hover button {
+						color:black;
+						border:solid 1px black;
+			}
+			.details  {
+					position:absolute;
+					top:0;
+					width:100%;
+					height:0;
+					background:white;
+					transition:all 0.4s;
+			}
+			.box:hover .details {
+						height:100%;
+			}
+			
+
+			
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div class="box">
+				<div class="boxtext">
+					<h5>B.N. Choudhury<br> President</h5>
+					<div class="details">
+					</div>
+					<button>READ MORE</button>
+					
+				</div>
+				<div class="boximg">
+					<img src="r2.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="boximg">
+					<img src="r1.jpg"/>
+				</div>
+				<div class="boxtext">
+					<h5>Rajendra Vidyalaya<br> News</h5>
+					<div class="details">
+					</div>
+					<button>READ MORE</button>
+
+				</div>
+
+
+			</div>
+			<div class="box">
+				<div class="boxtext">
+					<h5>Rajendra Vidyalaya<br> Videos</h5>
+					<div class="details">
+					</div>
+					<button>READ MORE</button>
+
+
+				</div>
+				<div class="boximg">
+					<img src="r3.jpg"/>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

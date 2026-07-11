@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Corner</title>
+		<style>
+			#mainarea {
+					width:1200px;
+					height:900px;
+					background:blue;
+					position:relative;
+			}
+			#mainarea h1 {
+					font-size:30px;
+					color:cyan;
+					position:absolute;
+					left:50px;
+					top:50px;
+					z-index:300;
+					
+			}
+			.corners {
+					height:30px;
+					width:30px;
+					background:yellow;
+					border:solid 1px black;
+					position:absolute;
+					top:0;
+					left:0;
+					cursor:pointer;
+	
+			}
+			.popup {
+					width:587px;
+					left:13;
+					height:395px;
+					background:red;
+					box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+					opacity:0;
+					transition:0.8s;
+					padding:200px;
+					visibility:hidden;
+					position:absolute;
+							
+			}
+			.corners:hover .popup {
+						visibility:visible;
+						opacity:1;
+						transform:scale(1.4,1.2);
+						overflow:hidden;
+
+			}
+		
+		</style>
+	</head>	
+	<body>
+		<div id="mainarea">
+			<h1>This is the main Area</h1>
+			<div class="corners">
+				<div class="popup">
+					<h2>This is Ashish Kumar</h1>
+					<p>This box open on hover</p>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

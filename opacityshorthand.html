@@ -1,0 +1,482 @@
+<html>
+	<head>
+		<title>First class css</title>
+		<style type="text/css">
+			body {
+				/*background-color:#0F0;
+				background-image:url('lion1.webp');
+				background-repeat:no-repeat;
+				background-position:center;
+				background-attachment:fixed;
+				background:red url('lion1.webp') no-repeat top right fixed;*/  /*shortend*/
+				margin:0;
+			     }
+			#menu {
+				width:50px;
+				height:150px;
+				background:yellow;
+				position:fixed;
+				right:0;			
+				top:10%;
+				
+			}
+
+			#mainarea{
+					width:1200px;
+					height:1500px;
+					background:orange;
+					margin: 0 auto;
+					
+			}
+			#toparea{
+					width:1200px;
+					height:150px;
+					background:deepskyblue;
+			}
+			#logoarea{
+					width:150px;
+					height:150px;
+					background:violet;
+					float:left;
+			}
+			#logoarea img{
+					height:130px;
+					width:130px;
+					margin:10px;
+		
+			}
+			#titlearea{
+					width:1050px;
+					height:150px;
+					background:indigo;
+					float:left;
+			}
+			#titlearea h1 {
+					color:cyan;
+					/*text-shadow:5px 5px 10px red;*/
+					/*text-shadow:5px 5px 10px red, -5px -5px 10px black;*/
+					text-shadow:2px 2px 2px rgba(206,89,55,0);
+
+
+			}
+			#titlearea p {
+					color:violet;
+					/*font-weight:bold bolder lighter;*/
+					/*font-weight:100;*/
+
+					/*font-size:30px;*/
+
+					/*font-family:arial;*/
+					/*font-family:arial, verdana;*/
+					/*font-family:arial, verdana,'georgia','times';*/
+					/*font-family:georgia;*/
+					
+					font:normal 20px arial,verdana; /*shorthand*/
+
+					/*font-style:italic;*/
+					font-style:oblique;
+
+					/*text-align:right;*/
+					
+					/*text-decoration:underline;*/
+					/*text-decoration:overline;*/
+					text-decoration:overline underline;
+					/*text-decoration:line-through;*/
+			
+					/*text-transform:lowercase;*/
+					/*text-transform:uppercase;*/
+					text-transform:capitalize;
+
+
+					/*letter-spacing:50px;*/
+					/*letter-spacing:-50px;*/  /*overlap the text*/
+
+					/*word-spacing:100px;*/
+					/*word-spacing:-10px;*/
+				
+					/*line-height:100px;*/
+			
+					text-indent:50px;  /*it give indentation at the starting of line in a text*/
+
+			}
+			#menuarea {
+					width:1200px;
+					height:40px;
+					background:red;
+					float:left;
+					position:sticky;
+					top:0;
+					z-index:1500;
+
+			}
+			#menuarea ul {
+					list-style:none;
+					margin:0;
+					padding:0;
+			}
+			#menuarea ul li {
+					float:left;
+			}
+	
+			#menuarea ul li a:link, #menuarea ul li a:visited {
+									color:blue;
+									text-decoration:none;
+									background:yellow;
+									padding:10px 25px;
+									display:block;
+									border-right:solid 1px black;
+			}
+			#menuarea ul li a:hover {
+							color:red;
+							background:green;
+		
+			}
+			#menuarea ul li ul {
+					display:none;
+			}
+			
+			#menuarea ul li:hover ul {
+					display:block;
+					position:absolute;
+					z-index:1000;
+					min-width:107px;	
+			}
+			#menuarea ul li ul li {
+					float:none;
+					border:1px solid black;
+
+			}
+			#menuarea ul li:last-child a {
+					border-right:transparent;
+			}
+		
+			#slidearea{
+					width:1200px;
+					height:300px;
+					float:left;
+					/*padding-left:100px;
+					/*background-image:linear-gradient(30deg,red 0%, red 50%, yellow 50%, yellow 100%);*/
+
+					/*background-image:conic-gradient(red,yellow);*/
+					/*background-image:conic-gradient(red 30deg, yellow 150deg, green 210deg);*/
+					/*background-image:conic-gradient(red,yellow,green);*/
+					/*background-image:conic-gradient(red 0%,yellow 30%,green 100%);*/
+					/*background-image:repeating-conic-gradient(red 0%,yellow 20%);*/
+					/*background-image:repeating-conic-gradient(red 0%,yellow 30%,green 50%);*/
+					/*background-image:repeating-conic-gradient(red 30deg, yellow 150deg, green 210deg);*/
+
+
+			}
+			#sarea {
+					width:1000px;
+					height:200px;
+					background:blue;
+					position:relative;
+					/*top:-50px;*/
+					top:50px;
+					left:100px;
+			}
+			
+			#darea{
+					width:1200px;
+					height:300px;
+					background:pink;
+					float:left;
+					
+
+			}
+			#leftarea{
+					width:500px;
+					height:200px;
+					background:yellow;
+					float:left;
+					margin:50px;
+					
+			}
+			#rightarea{
+					width:500px;
+					height:200px;
+					background:darkgreen;
+					float:left;
+					margin:50px;
+			}
+			#boxarea{
+					width:1200px;
+					height:300px;
+					background:green;
+					float:left;
+
+			}
+			.box{
+					width:300px;
+					/*width:200px;*/
+					height:200px;
+					background:yellow;
+					float:left;
+					margin:50px;
+					/*border-top-style:solid;
+					border-top-width:50px;
+					border-top-color:blue;*/
+					/*border-top:outset 20px yellow;*/
+					/*overflow:hidden;*/
+					/*overflow:scroll;*/
+					/*overflow:auto;*/
+					/*overflow-y:scroll;*/
+					/*overflow-x:scroll;*/
+					position:relative;
+	
+
+			}
+			.box table {
+					width:300px;
+					height:200px;
+					background:cyan;
+					border-collapse:collapse;
+					text-align:center;
+				
+			}
+			.box table, .box table tr th, .box table tr td {
+					border:solid 1px black;
+			}
+			.box table tr:first-child {
+							background:blue;
+							color:white;
+			}
+			.box table tr:nth-child(even) {		
+							background:pink;
+							color:brown;
+			}
+			.box table tr:hover {
+						background:indigo;
+			}
+			.box table tr td {
+						vertical-align:top;
+			}
+			.box:hover {	
+					/*border-radius:50px 0 0 0;*/
+					/*border-radius:50px 100px;*/
+					/*border-radius:50%;*/	
+			}
+			.box img {
+					width:100%;
+					height:100%;
+					opacity:0.7;
+					/*transition-property:opacity;
+					transition-duration:2s;
+					transition-delay:2s;*/
+			
+					transition:opacity 2s,transform 4s;
+
+					
+			}
+			.box img:hover {
+					opacity:1;
+					transform:scale(0.6,0.6);
+			}
+						
+			#footerarea{
+					width:1200px;
+					height:410px;
+					background:brown;
+					float:left;
+
+			}
+			#f1{
+					width:300px;
+					height:410px;
+					background:magenta;
+					float:left;
+			}
+			#f1 ul {
+					/*list-style-type:circle;*/
+					/*list-style-type:square;*/
+					/*list-style-type:decimal;*/
+					/*list-style-type:decimal-leading-zero;*/
+					/*list-style-type:upper-roman;*/
+					/*list-style-type:lower-roman;*/
+					/*list-style-type:lower-alpha;*/
+					/*list-style-type:upper-alpha;*/
+					/*list-style-type:lower-greek;*/
+
+					/*list-style-type:none;
+					list-style-image:url('http://www.mpsckp.com/images/arr.png');
+					list-style-position:inside;*/
+
+					list-style:none url('http://www.mpsckp.com/images/arr.png') inside;   /*Shorthand*/
+
+
+			}
+			#f2{
+					width:300px;
+					height:410px;
+					background:darkbrown;
+					float:left;
+			}
+			#f2 ul	{
+					list-style:none;
+					margin:0;
+					padding:0;
+			}
+			#f2 ul li a:link, #f2 ul li a:visited {
+									color:cyan;
+									text-decoration:none;
+			}
+			#f2 ul li a:hover {
+									color:red;
+		
+			}
+
+					
+			#f3{
+					width:300px;
+					height:410px;
+					background:red;
+					float:left;
+			}
+			#f3 ul	{
+					list-style:none;
+					margin:0;
+					padding:0;
+			}
+	
+			#f3 ul li a:link, #f3 ul li a:visited {
+									color:blue;
+									text-decoration:none;
+									background:yellow;
+									padding:10px 25px;
+									display:block;
+									border-bottom:solid 1px black;
+			}
+			#f3 ul li a:hover {
+									color:red;
+									background:green;
+		
+			}
+
+			#f4{
+					width:300px;
+					height:410px;
+					background:yellow;
+					float:left;
+			}
+
+
+				
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+		</div>
+		<div id="mainarea">
+			<div id="toparea">
+				<div id="logoarea">
+					<img src="my.webp"/>
+				</div>
+
+				<div id="titlearea">
+					<h1>My name Is Ashish Kumar</h1>
+					<p> I live in JMD
+					
+				</div>
+
+			</div>
+			<div id="menuarea">
+				<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Products</a>
+							<ul>
+								<li><a href="#">P1</a></li>
+								<li><a href="#">P2</a></li>
+								<li><a href="#">P3</a></li>
+							</ul>
+						</li>	
+
+
+						
+				</ul>
+
+			</div>
+			<div id="slidearea">
+				<div id="sarea">
+				</div>
+	
+			</div>
+			<div id="darea">
+				<div id="leftarea">
+				</div>
+
+				<div id="rightarea">
+				</div>
+			</div>
+			<div id="boxarea">
+				<div class="box">
+					<img src="img1.jpg">
+					<div class="details">
+						Ashish
+					</div>
+				</div>
+				<div class="box">
+					<img src="img2.webp">
+					<div class="details">
+						Ashish
+
+					</div>
+									
+				</div>
+				<div class="box">
+					<img src="img3.avif">
+					<div class="details">
+						Ashish
+
+					</div>
+				</div>
+
+				
+
+			</div>
+			<div id="footerarea">
+				<div id="f1">
+					<ul>
+						<li>Home</li>
+						<li>About</li>
+						<li>Gallery</li>
+						<li>Contact</li>
+
+						
+					</ul>
+				</div>
+				<div id="f2">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+
+						
+					</ul>
+
+				</div>
+				<div id="f3">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+
+						
+					</ul>
+
+				</div>
+				<div id="f4">
+				</div>
+			</div>
+
+		</div>
+		
+	</body>
+</html>
+
+

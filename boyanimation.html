@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>Boy</title>
+		<style>
+			#mainarea {
+					width:1200px;
+					height:1000px;
+					background:cyan;
+					margin:0 auto;
+					position:relative;
+			}
+			#dance {
+					width:600px;
+					height:400px;
+					position:relative;
+					left:100px;
+					
+			}
+			.frame{
+    				width:100%;
+    				height:100%;
+    				position:absolute;
+    				top:0;
+    				left:0;
+   				opacity:0;
+			}
+
+			.frame1{
+    				animation:pose1 .9s infinite;
+			}
+
+			.frame2{
+    				animation:pose2 .9s infinite;
+			}
+
+			.frame3{
+    				animation:pose3 .9s infinite;
+			}
+
+			@keyframes pose1{
+    				0%,33%{
+        				opacity:1;
+    				}
+    				34%,100%{
+        				opacity:0;
+    				}
+			}
+
+			@keyframes pose2{
+    				0%,33%{
+        				opacity:0;
+    				}
+    				34%,66%{
+        				opacity:1;
+    				}
+    				67%,100%{
+        				opacity:0;
+    				}
+			}
+
+			@keyframes pose3{
+    				0%,66%{
+        				opacity:0;
+    				}
+    				67%,100%{
+        				opacity:1;
+    				}
+			}
+								
+
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+				<div id="dance">
+					<img src="boy.jpg" class="frame frame1"/>
+					<img src="boy2.jpg" class="frame frame1"/>
+					<img src="boy3.jpg" class="frame frame1"/>
+				</div>
+		</div>
+
+	</body>
+
+
+</html>

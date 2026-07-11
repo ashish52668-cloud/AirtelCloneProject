@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Box Tasks</title>
+		<style>
+			#mainarea {
+					width:100%;
+					height:1200px;
+					background:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="workarea">
+				<div class="row1">
+				</div>
+				<div class="row2">
+			</div>
+		</div>
+	</body>
+</html>
