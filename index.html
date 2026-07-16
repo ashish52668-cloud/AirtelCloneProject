@@ -354,7 +354,7 @@
 			margin-top:10px;
 		}
 		.carea p {
-			margin-left:5px;
+			margin-left:8px;
 		}
 		.carea:hover {
 			background:#ECEDFF;
@@ -488,7 +488,7 @@
 		}
 		#asbox p {
 			margin-left:5px;
-			margin-top:5px;
+			margin-top:7px;
 			color:#696B82;
 		}
 		#darea button {
@@ -848,12 +848,15 @@
 		.apparea button {
 					width:150px;
 					height:40px;
-					border:solid 2px black;
+					border:solid 1px black;
 					border-radius:10px;
 					position:relative;
 					left:160px;
 					color:black;
 					font-weight:bold;
+		}
+		.apparea button:hover {
+					border:solid 2px black;
 		}
 		#basesection {
 				width:100%;
@@ -896,6 +899,11 @@
 						line-height:17px;
 						margin-left:30px;
 
+		}
+		@media screen and (max-width:1000px) {
+			#mainarea, #toparea, #menuarea, #herosection, #planarea, #darea, #smallarea, #bgarea, #coverimg, #businessarea, #endarea, #infoarea, #basesection {
+				width:100%;
+			}
 		}
 		/*@media print {
 				#toparea,#menuarea {
